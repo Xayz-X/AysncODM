@@ -1,0 +1,75 @@
+site_name: My Docs
+
+theme:
+  name: material
+  language: en
+  # icon:
+  #   logo: material-material-design
+
+
+  features:
+    - content.tooltips
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tops
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  plugins:
+    - typeset
+    - search
+
+  palette:
+    # palette toggle for dark code
+    - scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+    # palette toggle for light code
+    - scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+
+copyright: Copyright © 2024 Xayz
+
+extra_css:
+  - stylesheets/extra.css
+
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Xayz-X
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/BVKaPPvHMN
+
+
+nav:
+  - Home: https://google.com
+  - Test:
+    # - 'Testing':
+    - 'New Testing': Home/test.md 
